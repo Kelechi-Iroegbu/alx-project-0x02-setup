@@ -1,17 +1,21 @@
 import React from "react";
+import Header from "@/components/layout/Header";
 import Button from "@/components/common/Button";
 
 const About: React.FC = () => {
   return (
-    <div className="flex flex-col gap-4 items-center justify-center h-screen">
-      <h1 className="text-4xl font-semibold mb-6">About Page</h1>
+    <>
+      <Header />
 
-      <Button label="Small Button" size="small" shape="rounded-sm" />
-      <Button label="Medium Button" size="medium" shape="rounded-md" />
-      <Button label="Large Button" size="large" shape="rounded-full" />
-    </div>
+      <div className="flex flex-col items-center gap-5 mt-10">
+        <h1 className="text-4xl font-semibold">About Page</h1>
+
+        <Button label="Small" size="small" shape="rounded-sm" />
+        <Button label="Medium" size="medium" shape="rounded-md" />
+        <Button label="Large" size="large" shape="rounded-full" />
+      </div>
+    </>
   );
 };
 
 export default About;
-
