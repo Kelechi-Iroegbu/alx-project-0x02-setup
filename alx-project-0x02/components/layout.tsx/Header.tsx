@@ -1,7 +1,11 @@
-import React from 'react'
+import React from "react";
 
-export default function Header() {
+const Header: React.FC = () => {
   return (
-    <div>Header</div>
-  )
-}
+    <header className="w-full p-4 bg-gray-800 text-white text-center">
+      <h1 className="text-xl font-semibold">ALX Project</h1>
+    </header>
+  );
+};
+
+export default Header;

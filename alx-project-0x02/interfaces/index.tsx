@@ -1,7 +1,17 @@
-import React from 'react'
+export interface ButtonProps {
+  title: string;
+  styles?: string;
+  onClick?: () => void;
+}
 
-export default function index() {
-  return (
-    <div>index</div>
-  )
+export interface PostCardProps {
+  title: string;
+  description: string;
+  image?: string;
+}
+
+export interface UserProps {
+  id: number;
+  name: string;
+  email: string;
 }
