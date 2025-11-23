@@ -26,13 +26,20 @@ const Posts: React.FC = () => {
   return (
     <>
       <Header />
+
       <div className="flex flex-col items-center gap-6 mt-10">
         <h1 className="text-3xl font-bold">Posts</h1>
+
         {posts.length === 0 ? (
           <p>Loading posts...</p>
         ) : (
           posts.map((post, index) => (
-            <PostCard key={index} {...post} />
+            <PostCard
+              key={index}
+              title={post.title}
+              content={post.content}
+              userId={post.userId}
+            />
           ))
         )}
       </div>
@@ -41,4 +48,5 @@ const Posts: React.FC = () => {
 };
 
 export default Posts;
+
 
