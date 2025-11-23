@@ -15,3 +15,8 @@ export interface UserProps {
   name: string;
   email: string;
 }
+
+export interface CardProps {
+  title: string;
+  content: string;
+}
