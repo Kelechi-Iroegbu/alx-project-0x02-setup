@@ -1,5 +1,5 @@
 import React from "react";
-import { ButtonProps } from "@/interfaces";
+import { type ButtonProps } from "@/interfaces";
 
 const Button: React.FC<ButtonProps> = ({
   label,
@@ -17,11 +17,5 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       onClick={onClick}
-      className={`bg-blue-600 text-white ${sizeClasses[size]} ${shape} ${className}`}
-    >
-      {label}
-    </button>
-  );
-};
+      className={`bg-blue-600 text-white ${sizeClasses[size]} ${shape
 
-export default Button;
